@@ -1,0 +1,15 @@
+<!-- templates/kelola_produk.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kelola Produk</title>
+</head>
+<body>
+    <h2>{% if produk_id %}Edit{% else %}Tambah{% endif %} Produk</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Simpan</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!-- templates/daftar_produk.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Produk</title>
+</head>
+<body>
+    <h2>Daftar Produk</h2>
+    <ul>
+        {% for item in produk %}
+            <li>{{ item.nama }} - Rp{{ item.harga }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

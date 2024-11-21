@@ -1,0 +1,15 @@
+<!-- templates/tambah_produk.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambah Produk</title>
+</head>
+<body>
+    <h2>Tambah Produk</h2>
+    <form method="post">
+        {% csrf_token %}  <!-- Token keamanan -->
+        {{ form.as_p }}
+        <button type="submit">Simpan</button>
+    </form>
+</body>
+</html>
